@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <html>
+  <style>
+    
+      li
+      {
+          /*Couleur en hexadécimal*/
+          background-color:  #080808;
+          color:#fcf8f8;
+          padding: 10px;
+          height: 30px;
+          width: 80px;
+          border: 1px solid#fc0808;
+          text-align:left;
+          /*Supprime points des listes*/
+          list-style-type: none;
+      }
+
+      li>ul
+        {
+          /*Cache*/
+          display:none;
+          position:relative;
+      }
+
+      /*Survolé par la souris et non cliqué*/
+      li:hover
+      {
+          background-color: #fa0b0b;
+      }
+
+      li:hover>ul
+      {
+          display:block;
+          background-color:  #fa120a;
+          height: 10px;
+          width: 80px;
+          position: absolute;
+          /*Décale les sous-menus vers droite*/
+          left: 110px;
+      }
+  </style>
+  <body>
+
+  <h1>Le pont mirabeau</h1>
+
+  <ul>
+    <li>Home</li>
+    <li>Services
+      <ul>
+        <li>Strategy</li>
+        <li>Optimization</li>
+      </ul>
+    </li>
+    <li>Publications
+    <ul>
+        <li>Articles</li>
+        <li>Tutorials</li>
+      </ul>
+      </li>
+      <li>Events</li>
+      <li>Contacts</li>
+  </ul>
+
+  </body>
+  </html>
